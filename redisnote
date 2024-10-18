@@ -1,0 +1,105 @@
+====================================================================
+Redis - open source s/w
+====================================================================
+
+
+Why we use the redis
+
+In our table have some data are static its not changable then we dont have to get the data from database every time we have to get the data
+from the mysql network call is here 
+
+In Memory Database In redis data save in the ram not in harddisk
+
+In my sql data store in hard disk
+
+It is like empaty memory
+
+no sql , no tables, no squense, no joins etc
+
+ we can store data type in resdis string, hashoperation , list, set etc
+ 
+ Cache Manager
+ 
+ message broker 
+ 
+
+after downloading the redis hit the command redis-server
+            
+                       crate the connection
+          requet       jedis and lettuce
+ client ------ server --------- redis   ----- ----database
+
+we can store the data in redis in the form of  string . List, set . Hash
+
+exceptionally fast redis is very fast and can perform about 110000 set s per scond about 81000 gets per second
+
+
+how to check the redis is running in my system by using this command
+
+ps aux | grep redis-server
+
+how to set the value in string value by command propmt
+
+SET email "domain@gmail.com" EX 60 this value of key only store for 60 second 
+
+get the value from the key 
+
+get email  command for get the value
+
+
+if you get the multipale key mget 
+
+
+if you want to set the expire time ------  expire key 60
+
+check how to expire time expire key 
+
+to check the all key *
+
+delete the all key flushall 
+==========================================================
+To Set the data in list 
+=========================================================
+lpush key value value value
+
+like this
+
+ LPUSH values rushi harshil
+ 
+ lrange values 0 -1 to get the all data list data
+ 
+ to check the length of the key
+ 
+ lle key 
+ 
+ to remove the frist value 
+ lpop values
+ 
+ here values is key
+ 
+ to remove the last value
+ rpop values
+ 
+ here values is key 
+ 
+ if we want to change the value from the list 
+           
+           
+           key            
+ linsert products before car  bike // 
+ 
+ linsert products after car  bike //
+ 
+ 
+ 
+ here over requirment is to we have to check the value is available if not available then set 
+ 
+  
+
+
+
+
+
+
+
+
